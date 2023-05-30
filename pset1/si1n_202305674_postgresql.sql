@@ -14,7 +14,8 @@ CREATEROLE
 ENCRYPTED PASSWORD '123';
 
 --Usando o usuário mateus_sarmento e dando permissões para criar banco de dados e roles.
-SET ROLE mateus_sarmento;
+\c 'postgresql://mateus_sarmento:123@localhost/postgres'
+;
 
 --Criando bando de dados uvv.
 CREATE DATABASE uvv WITH
@@ -27,7 +28,6 @@ ALLOW_CONNECTIONS = true;
 
 --Conectando o BD uvv.
 \c uvv
-SET ROLE mateus_sarmento;
 
 COMMENT ON DATABASE uvv IS 'Banco da dados das lojas uvv';
 
@@ -35,8 +35,10 @@ COMMENT ON DATABASE uvv IS 'Banco da dados das lojas uvv';
 CREATE SCHEMA lojas 
 AUTHORIZATION mateus_sarmento;
 
+SET SEARCH_PATH TO lojas, "$USER", public;
+
 --Definindo SCHEMA lojas como padrão.
-ALTER USER  mateus_sarmento;
+ALTER USER  mateus_sarmento
 SET SEARCH_PATH TO lojas, "$USER", public;
 
 --Criando tabela produtos.
@@ -290,4 +292,4 @@ ALTER TABLE lojas.produtos
 ADD CONSTRAINT cc_produtos_preco_unitario
 CHECK (
        preco_unitario >= 0
-);
+)
