@@ -1,6 +1,6 @@
-# Projeto PSET1 
+# Design e Desenvolvimento de Bancos de Dados - PSET1  
 
-Trabalho realizado por **Mateus Sarmento da Hora**
+- **Aluno: Mateus Sarmento da Hora**
 - **Professor: Abrantes**
 - **Monitor(a): Suellen Miranda Amorim**
 
