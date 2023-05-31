@@ -1,8 +1,20 @@
-# Problem Set 1 (PSET1) 
+# Projeto PSET1 
 
-Trabalho realizado por **Mateus Sarmento da Hora** na disciplina de **Design e Desenvolvimento de Banco de Dados I.**
+Trabalho realizado por **Mateus Sarmento da Hora**
 - **Professor: Abrantes**
 - **Monitor(a): Suellen Miranda Amorim**
+
+
+## Alguns comando utilizados na realização do script
+
+DROP USER         ---->      Apagar Usuário             
+DROP DATABASE     ---->      Apagar Banco de Dados 
+SET ROLE          ---->      Define o Usuário Corrente
+SET SEARCH_PATH   ---->      Alterar o Esquema Padrão
+CREATE TABLE      ---->      Criar Tabela               
+CREATE DATABASE   ---->      Criar Banco de Dados       
+CREATE USER       ---->      Criar Usuário              
+CREATE SCHEMA     ---->      Criar Esquema Lógico      
 
 ## Apredizado gerado durante a realização do projeto
 
