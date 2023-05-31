@@ -13,7 +13,7 @@ CREATEDB
 CREATEROLE
 ENCRYPTED PASSWORD '123';
 
---Usando o usuário mateus_sarmento e dando permissões para criar banco de dados e roles.
+--Conectando ao usuário mateus_sarmento.
 \c 'postgresql://mateus_sarmento:123@localhost/postgres'
 ;
 
@@ -268,7 +268,7 @@ ON DELETE NO ACTION
 ON UPDATE NO ACTION
 NOT DEFERRABLE;
 
---Realizando checagens.
+--Realizando as Checks.
 
 ALTER TABLE lojas.pedidos
 ADD CONSTRAINT cc_pedidos_status
