@@ -7,13 +7,20 @@ Trabalho realizado por **Mateus Sarmento da Hora**
 
 ## Alguns comando utilizados na realização do script
 
-DROP USER         ---->      Apagar Usuário             
+DROP USER         ---->      Apagar Usuário   
+
 DROP DATABASE     ---->      Apagar Banco de Dados 
+
 SET ROLE          ---->      Define o Usuário Corrente
+
 SET SEARCH_PATH   ---->      Alterar o Esquema Padrão
-CREATE TABLE      ---->      Criar Tabela               
-CREATE DATABASE   ---->      Criar Banco de Dados       
-CREATE USER       ---->      Criar Usuário              
+
+CREATE TABLE      ---->      Criar Tabela        
+
+CREATE DATABASE   ---->      Criar Banco de Dados   
+
+CREATE USER       ---->      Criar Usuário      
+
 CREATE SCHEMA     ---->      Criar Esquema Lógico      
 
 ## Apredizado gerado durante a realização do projeto
