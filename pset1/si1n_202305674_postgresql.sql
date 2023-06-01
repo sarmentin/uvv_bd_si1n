@@ -292,4 +292,4 @@ ALTER TABLE lojas.produtos
 ADD CONSTRAINT cc_produtos_preco_unitario
 CHECK (
        preco_unitario >= 0
-)
+);
